@@ -95,8 +95,6 @@ inline bool operator<(const BoardState &a, const BoardState &b) {
 
 class Board;
 
-// 完成不同的任务都需要遍历，但是每种遍历判断的逻辑和保存的数据不同，
-// 设计成一个基类
 class TraverseAction {
 public:
 	TraverseAction(Board& b): board(b) {}
